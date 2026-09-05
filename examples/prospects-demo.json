@@ -1,0 +1,85 @@
+[
+  {
+    "id": "PRO-001",
+    "company": "杭州明川教育科技有限公司",
+    "domain": "mingchuan-edu.cn",
+    "contact_email": "zhangwei@mingchuan-edu.cn",
+    "contact_name": "张伟",
+    "industry": "教育装备（B2B）",
+    "country": "中国",
+    "status": "proposal",
+    "geo_score": 28,
+    "audit_date": "2026-08-20",
+    "audit_file": "~/.geo-prospects/audits/mingchuan-edu.cn-2026-08-20.md",
+    "proposal_file": "~/.geo-prospects/proposals/mingchuan-edu.cn-proposal-2026-08-21.md",
+    "monthly_value": 35000,
+    "contract_start": null,
+    "contract_months": 12,
+    "notes": [
+      {
+        "date": "2026-08-20T14:00:00",
+        "text": "GEO 快速审计完成。综合评分 28/100（危险档）。核心问题：服务器拦截了 Bytespider 和 Baiduspider（返回 403），全站无任何 Schema，知乎/百度百科/B站均无品牌实体。机会点：公司成立 15 年、服务 300+ 学校，同行在 AI 搜索里同样隐身，先发优势明显。已推荐旗舰版 ¥35,000/月。"
+      },
+      {
+        "date": "2026-08-21T10:30:00",
+        "text": "提案已生成并发送给张总。推荐档位：旗舰版 ¥35,000/月 × 12 个月 = ¥420,000。ROI 测算：回本周期约 8-12 个月。提案含 6 个月时间表、三档报价、竞品对比和 ROI 测算。约好下周三电话过一遍。"
+      }
+    ],
+    "created_at": "2026-08-20",
+    "updated_at": "2026-08-21"
+  },
+  {
+    "id": "PRO-002",
+    "company": "深圳蓝鲸跨境供应链",
+    "domain": "lanjing-scm.com",
+    "contact_email": "",
+    "contact_name": "李婷",
+    "industry": "跨境物流",
+    "country": "中国",
+    "status": "qualified",
+    "geo_score": 41,
+    "audit_date": "2026-08-28",
+    "audit_file": "~/.geo-prospects/audits/lanjing-scm.com-2026-08-28.md",
+    "proposal_file": "",
+    "monthly_value": 18000,
+    "contract_start": null,
+    "contract_months": 0,
+    "notes": [
+      {
+        "date": "2026-08-28T16:00:00",
+        "text": "快速审计评分 41/100（较差档）。robots.txt 已放行国内主流爬虫，但 llms.txt 缺失、内容页无定义句式、知乎零讨论。符合标准版 ¥18,000/月的服务画像，下周出提案。"
+      }
+    ],
+    "created_at": "2026-08-26",
+    "updated_at": "2026-08-28"
+  },
+  {
+    "id": "PRO-003",
+    "company": "成都拾光咖啡连锁",
+    "domain": "shiguang-coffee.cn",
+    "contact_email": "hr@shiguang-coffee.cn",
+    "contact_name": "",
+    "industry": "餐饮连锁（本地服务）",
+    "country": "中国",
+    "status": "won",
+    "geo_score": 55,
+    "audit_date": "2026-07-15",
+    "audit_file": "~/.geo-prospects/audits/shiguang-coffee.cn-2026-07-15.md",
+    "proposal_file": "~/.geo-prospects/proposals/shiguang-coffee.cn-proposal-2026-07-16.md",
+    "monthly_value": 8000,
+    "contract_start": "2026-08-01",
+    "contract_months": 6,
+    "notes": [
+      {
+        "date": "2026-07-16T11:00:00",
+        "text": "基础版 ¥8,000/月签约，8 月 1 日启动。首月目标：补齐 LocalBusiness schema、门店信息同步到百度地图/高德、创建 llms.txt。"
+      },
+      {
+        "date": "2026-09-01T09:30:00",
+        "text": "首月月报已发：GEO 评分 55 → 63（+8）。豆包已能在「成都咖啡馆推荐」类问题中引用门店信息。客户续约意愿强。"
+      }
+    ],
+    "created_at": "2026-07-14",
+    "updated_at": "2026-09-01"
+  }
+]

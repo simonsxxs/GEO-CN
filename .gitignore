@@ -1,0 +1,7 @@
+# 开发档案（不发布）
+openspec/
+# 系统与缓存
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/

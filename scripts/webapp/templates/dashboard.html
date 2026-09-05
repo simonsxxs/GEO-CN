@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block title %}看板 —— GEO 客户管理{% endblock %}
+
+{% block content %}
+
+<!-- KPI 卡片 -->
+<div class="row g-3 mb-4">
+  <div class="col-6 col-md-4 col-xl-2">
+    <div class="kpi-card">
+      <div class="kpi-value text-white">{{ stats.total }}</div>
+      <div class="kpi-label"><i class="bi bi-people me-1"></i>客户总数</div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-xl-2">
+    <div class="kpi-card">
+      <div class="kpi-value" style="color:var(--geo-good)">{{ stats.active }}</div>
+      <div class="kpi-label"><i class="bi bi-check-circle me-1"></i>合作中客户</div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-xl-2">
+    <div class="kpi-card">
+      <div class="kpi-value" style="color:#58a6ff">{{ stats.mrr }}</div>
+      <div class="kpi-label"><i class="bi bi-currency-yen me-1"></i>月收入（MRR）</div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-xl-2">
+    <div class="kpi-card">
+      <div class="kpi-value" style="color:var(--geo-poor)">{{ stats.pipeline }}</div>
+      <div class="kpi-label"><i class="bi bi-funnel me-1"></i>管道价值</div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-xl-2">
+    <div class="kpi-card">
+      <div class="kpi-value tier-{{ stats.avg_tier }} score-num" style="font-size:1.9rem">
+        {{ stats.avg_score }}<small style="font-size:1rem;color:#8b949e">/100</small>
+      </div>
+      <div class="kpi-label"><i class="bi bi-graph-up me-1"></i>平均 GEO 评分</div>
+    </div>
+  </div>
+</div>
+
+<!-- 过滤 + 排序 -->
+<div class="d-flex align-items-center gap-2 mb-3 flex-wrap">
+  <span class="text-secondary" style="font-size:.8rem">状态：</span>
+  <a href="/" class="btn btn-sm {% if not status_filter %}btn-primary{% else %}btn-outline-secondary{% endif %}">全部</a>
+  {% for s in statuses %}
+    {% set meta = s | status_meta %}
+    <a href="/?status={{ s }}&sort={{ sort }}"
+       class="btn btn-sm {% if status_filter == s %}btn-{{ meta.badge }}{% else %}btn-outline-secondary{% endif %}">
+      {{ meta.icon }} {{ meta.label }}
+    </a>
+  {% endfor %}
+
+  <div class="ms-auto d-flex align-items-center gap-2">
+    <span class="text-secondary" style="font-size:.8rem">排序：</span>
+    <a href="/?status={{ status_filter }}&sort=score"
+       class="btn btn-sm {% if sort == 'score' %}btn-primary{% else %}btn-outline-secondary{% endif %}">
+       评分
+    </a>
+    <a href="/?status={{ status_filter }}&sort=company"
+       class="btn btn-sm {% if sort == 'company' %}btn-primary{% else %}btn-outline-secondary{% endif %}">
+       公司
+    </a>
+    <a href="/?status={{ status_filter }}&sort=mrr"
+       class="btn btn-sm {% if sort == 'mrr' %}btn-primary{% else %}btn-outline-secondary{% endif %}">
+       月合同额
+    </a>
+  </div>
+</div>
+
+<!-- 客户表格 -->
+{% if prospects %}
+<div class="table-responsive">
+  <table class="table align-middle">
+    <thead>
+      <tr>
+        <th>公司</th>
+        <th>域名</th>
+        <th>状态</th>
+        <th>GEO 评分</th>
+        <th>审计日期</th>
+        <th class="text-end">月合同额</th>
+        <th class="text-center">提案</th>
+        <th class="text-center">PDF</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for p in prospects %}
+      {% set meta = p.status | status_meta %}
+      {% set tier = p.geo_score | score_tier %}
+      <tr onclick="location.href='/prospect/{{ p.id }}'" class="tier-{{ tier }}">
+        <td class="fw-semibold text-white">{{ p.company }}</td>
+        <td class="text-secondary" style="font-size:.85rem">{{ p.domain }}</td>
+        <td>
+          <span class="badge bg-{{ meta.badge }}">{{ meta.icon }} {{ meta.label }}</span>
+        </td>
+        <td>
+          <div class="score-bar-wrap tier-{{ tier }}">
+            <div class="score-bar">
+              <div class="score-bar-fill" style="width:{{ p.geo_score }}%"></div>
+            </div>
+            <span class="score-num">{{ p.geo_score }}/100</span>
+          </div>
+        </td>
+        <td class="text-secondary" style="font-size:.83rem">{{ p.audit_date or '—' }}</td>
+        <td class="text-end fw-semibold">{{ p.monthly_value | format_rmb }}</td>
+        <td class="text-center">
+          {% if p.proposal_file %}
+            <i class="bi bi-file-text text-info"></i>
+          {% else %}
+            <span class="text-secondary">—</span>
+          {% endif %}
+        </td>
+        <td class="text-center" onclick="event.stopPropagation()">
+          <a href="/prospect/{{ p.id }}/pdf"
+             class="btn btn-sm btn-outline-danger {% if not p.proposal_file %}disabled{% endif %}"
+             title="下载 PDF">
+            <i class="bi bi-file-earmark-pdf"></i>
+          </a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% else %}
+<div class="text-center py-5 text-secondary">
+  <i class="bi bi-inbox display-4 d-block mb-3"></i>
+  暂无客户记录。
+  {% if status_filter %}
+    <a href="/" class="d-block mt-2">清除过滤条件</a>
+  {% endif %}
+</div>
+{% endif %}
+
+{% endblock %}
