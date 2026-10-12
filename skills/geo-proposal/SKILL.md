@@ -345,3 +345,11 @@ allowed-tools: Read, Write, Bash, Glob, WebFetch
 - 评分 41-60 → 推荐**标准版**（按月系统化优化）
 - 评分 61-75 → 推荐**基础版**（维护 + 定向改善）
 - 评分 76+ → 提供**基础版**或每季度一次的巡检服务
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx

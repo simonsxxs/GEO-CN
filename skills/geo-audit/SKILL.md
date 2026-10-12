@@ -335,3 +335,11 @@ Generate a file called `GEO-AUDIT-REPORT.md` with the following structure:
 - Extra weight on: Case studies (citability), expertise demonstration, thought leadership
 - Check for: Portfolio schema, team credentials, industry-specific expertise signals
 - Key schema: Organization, Service, Person (team), Review
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx

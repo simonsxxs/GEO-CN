@@ -647,3 +647,11 @@ AI Agent 和 API 客户端无需解析 HTML 即可发现你的服务。
 ## 详细发现
 [按类别展开，附证据]
 ```
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx

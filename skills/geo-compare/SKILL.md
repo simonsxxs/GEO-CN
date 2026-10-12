@@ -303,3 +303,11 @@ LocalBusiness 已上线）。下个月重点是内容可引用性 —— 权重�
    第 6 个月目标在轨：是（65/100）
    ```
 3. 建议下一步："发给客户，或运行 `/geo-cn report-pdf` 生成可视化版本"
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx

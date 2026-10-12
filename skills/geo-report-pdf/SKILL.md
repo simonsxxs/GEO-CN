@@ -118,3 +118,11 @@ Tell the user:
 | PDF is blank / empty | Increase `--virtual-time-budget` to 8000 |
 | Cover metadata missing | Check GEO-AUDIT-REPORT.md has the standard header format |
 | Fonts not loading | PDF is rendered offline; system fonts are used as fallback — this is expected |
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx

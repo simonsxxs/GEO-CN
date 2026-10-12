@@ -10,6 +10,11 @@ description: >
   "AI visibility", "optimize", "citability", "llms.txt", "schema",
   "brand mentions", "GEO report", or any URL for analysis.
 allowed-tools: Read, Grep, Glob, Bash, WebFetch, Write
+slug: geo-cn
+displayName: GEO-CN 国内 AI 搜索可见性审计
+version: 1.0.0
+summary: 国内网站 GEO/SEO 审计工具包：完整审计编排、AI 引用性评分、爬虫可达性、llms.txt、品牌提及扫描、平台专项优化、Schema、技术 SEO、内容评估、客户级报告（MD/PDF），内置接单工作流（客户管理/提案/月报）。
+license: MIT
 ---
 
 # GEO-CN 国内版 GEO/SEO 审计工具 — Claude Code Skill（2026 年 2 月）
@@ -263,3 +268,11 @@ PDF 生成不需要 Python 依赖。
 
 - **作者：** simonsxxs（一个不会代码的AI极客）
 - **微信交流群：** simonsxxs
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx

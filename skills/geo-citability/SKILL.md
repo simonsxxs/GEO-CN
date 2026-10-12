@@ -272,3 +272,11 @@ python scripts/citability_scorer.py <url>
 | **元宝（腾讯）** | 对公众号等微信生态内容有天然接近性 |
 | **通义（阿里）** | 偏好权威来源和结构化数据 |
 | **百度 AI 搜索** | 与传统百度搜索权重有一定继承关系，偏好已收录的高权重页面 |
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx

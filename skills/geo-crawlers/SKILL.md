@@ -380,3 +380,11 @@ AI 爬虫可达性得分按以下方式计算：
 
 - Tier 2（传统蜘蛛）权重虽低于 Tier 1，但对国内站点实际是「一票否决」性质：Baiduspider 被屏蔽时，即使 Tier 1 全放行，报告中必须额外标注「国内 AI 可见性地基缺失」的严重警告。
 - DeepSeek 因无公开爬虫 UA 不参与直接计分，其可见性通过 Baiduspider + bingbot 的放行状态间接体现。
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx

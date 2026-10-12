@@ -498,3 +498,11 @@ else:
 **关键洞察：** 对 AI 可见性最重要的信号（视频平台、问答社区提及）在传统 SEO 中几乎无关紧要；而传统 SEO 最重要的信号（外链、DR）对 AI 可见性的预测力很弱。这要求一套根本不同的优化策略。
 
 **国内映射说明：** 上表为国外平台实测数据。国内对应关系（YouTube→B站、Reddit→知乎、Wikipedia→中文维基+百度百科、LinkedIn→微信公众号）是基于平台生态位的映射，对应权重为合理推断值，国内平台侧无公开实测相关系数。DeepSeek 等平台的搜索索引来源未公开，本手册不对此做无依据断言。
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx

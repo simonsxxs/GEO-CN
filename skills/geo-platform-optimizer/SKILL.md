@@ -358,3 +358,11 @@ allowed-tools: Read, Grep, Glob, Bash, WebFetch, Write
 ## 数据可靠性说明
 [列出报告中所有「未公开/推断值」的条目及其依据]
 ```
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx

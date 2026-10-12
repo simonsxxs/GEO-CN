@@ -345,3 +345,11 @@ Date: [Date]
 ### Author/E-E-A-T Improvements
 [Specific steps to strengthen E-E-A-T signals]
 ```
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx

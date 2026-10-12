@@ -401,3 +401,11 @@ Generate **GEO-CLIENT-REPORT.md** using the complete template above, filled with
 - Ready to send to a client without editing
 - Self-contained (no references to other report files — all relevant data is included)
 - Printable and presentable (clean markdown formatting)
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx

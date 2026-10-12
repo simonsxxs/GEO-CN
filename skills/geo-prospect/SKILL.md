@@ -190,3 +190,11 @@ GEO 接单管道汇总 —— 2026 年 8 月
 - 所有命令在终端打印确认信息 + 客户当前状态
 - 除明确保存审计/提案外不写外部文件
 - JSON 数据库是唯一事实来源
+
+---
+
+**作者：simon，一个不懂代码的AI极客**
+
+- 微信交流群：simonsxxs
+- GitHub：https://github.com/simonsxxs
+- Gitee：https://gitee.com/simonsxx
