@@ -1,6 +1,7 @@
 # geo-cn — 国内网站 AI 搜索可见性审计工具
 
 > 作者：**simonsxxs**（一个不会代码的AI极客） ｜ 微信交流群：**simonsxxs**
+> 个人网站：<https://simonsxx.com>
 
 **GEO 优先，SEO 托底。** 让网站更容易被国内 AI 搜索引擎
 （百度AI搜索、Kimi、DeepSeek、豆包、元宝、夸克/通义）引用，
